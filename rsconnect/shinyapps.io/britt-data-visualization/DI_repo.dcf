@@ -1,0 +1,8 @@
+name: DI_repo
+account: britt-data-visualization
+server: shinyapps.io
+bundleId: 222775
+url: https://britt-data-visualization.shinyapps.io/DI_repo
+when: 1437423980.17025
+asMultiple: FALSE
+asStatic: FALSE

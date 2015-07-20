@@ -1,9 +1,4 @@
-#load data
-Hour <- seq(0.5, 23.5, 1)
 
-
-#
-shiny app now
 
 shinyServer(function(input, output, session) {
 
@@ -19,8 +14,8 @@ shinyServer(function(input, output, session) {
   output$plot1 <- renderPlot({
     par(mar = c(5.1, 4.1, 0, 1))
     plot(selectedData(),
-         col = input$xcol,
-         pch = 20, cex = 3)
+         col = "blue",
+         pch = 20, cex = 3, ylim = c(0.4,2.1))
     #points(, pch = 4, cex = 4, lwd = 4)
   })
   
