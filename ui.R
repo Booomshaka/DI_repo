@@ -1,6 +1,6 @@
 library(RCurl)
-x <- getURL("https://raw.githubusercontent.com/Booomshaka/DI_repo/master/data_in.csv?token=AMqPtIeLRa89DCLGBhxbCKCPnxjLBADnks5Vto7DwA%3D%3D")
-data_in <- read.csv(text = x)
+data_in <- getURL("https://raw.githubusercontent.com/Booomshaka/DI_repo/master/data_in.csv?token=AMqPtIeLRa89DCLGBhxbCKCPnxjLBADnks5Vto7DwA%3D%3D")
+data_in <- read.csv(text = data_in)
 colnames(data_in) <- c("Hour", "Weekend Active Power (kw)", "Weekday Active Power (kw)")
 
 
